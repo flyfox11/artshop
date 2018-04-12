@@ -1,0 +1,56 @@
+// 公共 基础类
+a{
+  text-decoration: none;
+}
+@font-face {
+  font-family: 'souhua1';
+  src: url("../../fonts/xinwei.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'souhua2';
+  src: url("../../fonts/simkai.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'souhua3';
+  src: url("../../fonts/zhongsong.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.clearfix{
+  &:before{
+    content: "";
+    display: table;
+  }
+  &:after{
+    content: "";
+    display: table;
+    clear: both;
+    overflow: hidden;
+  }
+  zoom: 1;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+
+.is_app{
+  display: none;
+}
+@media (max-width: 768px) {
+  .is_desktop {
+    display: none;
+  }
+
+  .is_app {
+    display: block;
+  }
+}
